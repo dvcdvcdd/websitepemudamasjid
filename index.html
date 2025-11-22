@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--  Favicon -->
+    <link rel="icon" type="image/png" href="logo-smk.png">
+
+    <!--  Meta Description -->
+    <meta name="description" content="Profil SMK Muhammadiyah Bligo: visi, misi, data guru, kegiatan sekolah, dan kontak resmi.">
+
+    <title>Profil Sekolah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <img src="logo-smk.png" alt="Logo SMK Muhammadiyah Bligo" class="logo"> <!--  Alt lebih deskriptif -->
+        <h1>SMK MUHAMMADIYAH BLIGO</h1>
+    </header>
+
+    <!-- NAVIGASI -->
+    <nav>
+        <ul>
+            <li><a href="#profil">Profil</a></li>
+            <li><a href="#guru">Guru</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <!-- BAGIAN UTAMA -->
+    <main class="container">
+
+        <!-- PROFIL -->
+        <section id="profil">
+            <h2>Profil Sekolah</h2>
+            <p>
+               SMK Muhammadiyah Bligo adalah sekolah swasta di Pekalongan, Jawa Tengah, yang beralamat di Sapugarut Gg. 7, Buaran.
+               Sekolah ini didirikan pada tahun 2003 dan memiliki akreditasi B. Terdapat lima program keahlian yang ditawarkan,
+               yang bertujuan untuk menghasilkan lulusan yang memiliki akhlak mulia, terampil, dan kompeten di bidangnya.
+            </p>
+
+            <h2>Visi</h2>
+            <p>"Berakhlakul karimah dan unggul dalam prestasi."</p>
+
+            <h2>Misi</h2>
+            <ul>
+                <li>Mengefektifkan pembinaan kedisiplinan dalam membentuk pribadi yang berakhlakul karimah.</li>
+                <li>Mengefektifkan pengalaman nilai-nilai keagamaan dalam kehidupan sehari-hari untuk membentuk pribadi yang kuat dalam keimanan dan ketakwaan.</li>
+                <li>Mengefektifkan pembelajaran dan bimbingan untuk meningkatkan prestasi akademik dan nonakademik.</li>
+                <li>Mengefektifkan pelatihan keterampilan di sekolah untuk mempersiapkan tenaga terampil tingkat menengah.</li>
+                <li>Mengefektifkan praktik kerja industri (prakerin) dalam rangka mendekatkan teori dengan pekerjaan nyata.</li>
+            </ul>
+            
+            <h2>Kegiatan MPLS 2024</h2>
+            <img src="c:\Users\Windows\Desktop\tugas\Biwoo5CJYSWfzTHZ0gfMsSrC2Kv4PLVPyjbHqQXD1N7DOOrbcA.jpg" alt="Foto kegiatan MPLS 2024 di SMK Muhammadiyah Bligo" class="kegiatan"> <!--  Alt lebih baik -->
+        </section>
+
+        <!-- TABEL GURU -->
+        <section id="guru">
+            <h2>Data Guru</h2>
+            <table>
+                <tr>
+                    <th>Nama Guru</th>
+                    <th>Mata Pelajaran</th>
+                    <th>Email</th>
+                </tr>
+                <tr>
+                    <td>Arif Yunanto</td>
+                    <td>Pemrograman Web</td>
+                    <td>yunanto@sekolah.sch.id</td>
+                </tr>
+                <tr>
+                    <td>Abdurrahman Alatas</td>
+                    <td>Mikrotik</td>
+                    <td>alatas@sekolah.sch.id</td>
+                </tr>
+                <tr>
+                    <td>Muhammad Rifqi</td>
+                    <td>Jaringan Nirkabel</td>
+                    <td>rifqi@sekolah.sch.id</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- FORM KONTAK -->
+        <section id="kontak">
+            <h2>Kontak Kami</h2>
+            <form>
+
+                <!--  Label 'for' -->
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="pesan">Pesan:</label>
+                <textarea id="pesan" required></textarea>
+
+                <button type="submit">Kirim</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!--  Tombol Back to Top -->
+    <a href="#" class="to-top">⬆ Kembali ke atas</a>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Dibuat oleh: <strong>Pemuda Masjid</strong> | Tahun: 2025</p>
+    </footer>
+
+    <!--  JavaScript sederhana  -->
+    <script>
+        document.querySelector("form").addEventListener("submit", function(e) {
+            e.preventDefault();
+            alert("Pesan berhasil dikirim!");
+        });
+    </script>
+
+</body>
+</html>
